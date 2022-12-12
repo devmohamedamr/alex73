@@ -3,12 +3,11 @@
 
 
 class db{
-
     public $connection;
     public $sql;
-    public function __construct()
+    public function __construct($dbname)
     {
-        $this->connection = mysqli_connect("localhost","root","","amit");
+        $this->connection = mysqli_connect("localhost","root","",$dbname);
     }
 
     public function select(string $table,string $columns){
@@ -32,6 +31,17 @@ class db{
         $values =  rtrim($values,",");
 
         $this->sql = "INSERT INTO `$table` ($columns) VALUES ($values)";
+        return $this;
+    }
+
+    public function update(string $table,array $data){
+        $row = "";
+        foreach($data as $key => $value){
+            $row .= "`$key` = '$value',";
+        }
+
+        $row = rtrim($row,",");
+        $this->sql = "UPDATE `$table` SET $row";
         return $this;
     }
     public function where(string $column,string $operator,string $value){

@@ -117,15 +117,16 @@
 
 include "db.php";
 
-$db  = new db;
+$db  = new db("amit");
 
-$data = $db->select("category","*")->all();
 
 // $data = $db->delete("category")->where("id","=",9)->excute();
 
-// $db->insert("category",[
-//     "title"=>"test db"
-// ])->excute();
+// $db->update("category",[
+//     "title"=>"test db update"
+// ])->where("id","=",16)->excute();
+$data = $db->select("category","*")->all();
+
 echo "<pre>";
 
 print_r($data);
