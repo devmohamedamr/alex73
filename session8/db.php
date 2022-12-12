@@ -16,12 +16,25 @@ class db{
         return $this;
     }
 
-    public function delete($table){
+    public function delete(string $table){
         $this->sql = "DELETE FROM `$table`";
         return $this;
     }
 
-    public function where($column,$operator,$value){
+    public function insert(string $table,array $data){
+        $columns  = "";
+        $values  = "";
+        foreach($data as $key => $value){
+            $columns .= " `$key` ,";
+            $values .= "'$value' ,";
+        }
+        $columns =  rtrim($columns,",");
+        $values =  rtrim($values,",");
+
+        $this->sql = "INSERT INTO `$table` ($columns) VALUES ($values)";
+        return $this;
+    }
+    public function where(string $column,string $operator,string $value){
         $this->sql .= " WHERE `$column` $operator '$value'";
         return $this;
     }

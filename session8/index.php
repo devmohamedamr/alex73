@@ -123,6 +123,9 @@ $data = $db->select("category","*")->all();
 
 // $data = $db->delete("category")->where("id","=",9)->excute();
 
+// $db->insert("category",[
+//     "title"=>"test db"
+// ])->excute();
 echo "<pre>";
 
 print_r($data);
