@@ -1,0 +1,19 @@
+{
+    "name": "amit73/mvc",
+    "description": "mvc",
+    "autoload": {
+        "psr-4": {
+            "Amit73\\Mvc\\": "src/"
+        },"files": [
+            "src/routes/web.php",
+            "src/core/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "mohamed amr",
+            "email": "dev.mohamedamr@gmail.com"
+        }
+    ],
+    "require": {}
+}

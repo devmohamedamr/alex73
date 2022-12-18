@@ -1,6 +1,7 @@
 <?php
 
 
+namespace out;
 
 class DB{
     public $connection;

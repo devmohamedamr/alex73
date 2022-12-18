@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "04d1a7654fd9cb28be70e7be150ecbcc",
+    "packages": [
+        {
+            "name": "amit73/test",
+            "version": "v3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devmohamedamr/amittest.git",
+                "reference": "b2b748b8d821341acb3960cddc5f60b03391e53b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devmohamedamr/amittest/zipball/b2b748b8d821341acb3960cddc5f60b03391e53b",
+                "reference": "b2b748b8d821341acb3960cddc5f60b03391e53b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Amit73\\Test\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "mohamed amr",
+                    "email": "dev.mohamedamr@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/devmohamedamr/amittest/issues",
+                "source": "https://github.com/devmohamedamr/amittest/tree/v3"
+            },
+            "time": "2022-12-16T19:03:40+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
