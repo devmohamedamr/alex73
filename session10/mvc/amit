@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+
+if($argv[1] == "make:controller"){
+    $controllerContent = file_get_contents("src/core/stubs/controller.stubs");
+    $controllerName = $argv[2];
+    $filepath = "src/controllers/".$controllerName.".php";
+
+    fopen("src/controllers/".$controllerName.".php","w");
+    $newcontent =  str_replace("{classname}",$controllerName,$controllerContent);
+    
+    file_put_contents($filepath,$newcontent);
+    echo "controller created";
+}
