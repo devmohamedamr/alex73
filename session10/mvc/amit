@@ -12,4 +12,6 @@ if($argv[1] == "make:controller"){
     
     file_put_contents($filepath,$newcontent);
     echo "controller created";
+}elseif($argv[1] == "serve"){
+    exec("php -S localhost:8000");
 }
