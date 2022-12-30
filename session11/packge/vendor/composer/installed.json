@@ -1,0 +1,42 @@
+{
+    "packages": [
+        {
+            "name": "amit73/test",
+            "version": "v3",
+            "version_normalized": "3.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/devmohamedamr/amittest.git",
+                "reference": "b2b748b8d821341acb3960cddc5f60b03391e53b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/devmohamedamr/amittest/zipball/b2b748b8d821341acb3960cddc5f60b03391e53b",
+                "reference": "b2b748b8d821341acb3960cddc5f60b03391e53b",
+                "shasum": ""
+            },
+            "time": "2022-12-16T19:03:40+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Amit73\\Test\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "mohamed amr",
+                    "email": "dev.mohamedamr@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/devmohamedamr/amittest/issues",
+                "source": "https://github.com/devmohamedamr/amittest/tree/v3"
+            },
+            "install-path": "../amit73/test"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

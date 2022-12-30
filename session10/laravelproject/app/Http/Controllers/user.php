@@ -11,7 +11,6 @@ class user extends Controller
         $data =  DB::table("category")->get();
 
        return view('index',['data'=>$data]);
-        // echo "hi";
     }
 
     public function store(Request $request){
