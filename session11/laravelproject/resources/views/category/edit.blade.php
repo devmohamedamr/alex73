@@ -20,7 +20,7 @@
     <form action="{{ url('category/update') }}" method="post">
         @csrf
         <input type="hidden" name="id" value="{{$category->id}}">
-        <input type="text" name="title" value="{{$category->title}}">
+        <input type="text" name="title" value="{{$category->name}}">
         <input type="submit" value="update category">
     </form>
 </body>

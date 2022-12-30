@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-
+use App\Models\category as CategoryModel;
 class category extends Controller
 {
+
     // show category list
     public function index(){
-       $categories  =  DB::table("category")->get();
+        $categories = CategoryModel::all();
+    //    $categories  =  DB::table("category")->get();
         return view('category.index',compact('categories'));
     }
 
