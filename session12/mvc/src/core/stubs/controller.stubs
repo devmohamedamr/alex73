@@ -1,0 +1,8 @@
+<?php
+
+namespace Amit73\Mvc\controllers;
+
+
+class {classname} extends controller{
+
+}
