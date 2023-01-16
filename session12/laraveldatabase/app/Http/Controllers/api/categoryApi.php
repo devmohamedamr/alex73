@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\categorystore;
 use App\Models\category;
 use Illuminate\Http\Request;
 
@@ -32,11 +33,8 @@ class categoryApi extends Controller
       ]);
     }
 
-    public function store(Request $request)
+    public function store(categorystore $request)
     {
-        $request->validate([
-            "name"=>"required|min:2|max:20"
-        ]);
         $res =  category::create($request->all());
         if($res){
             return response()->json([
